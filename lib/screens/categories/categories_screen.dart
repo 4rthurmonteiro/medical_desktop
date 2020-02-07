@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'package:medical_desktop/screens/categories/cards/cardio_card.dart';
+import 'package:medical_desktop/screens/equations/cardio/cardio_equations_screen.dart';
+import 'package:medical_desktop/utils/nav.dart';
+
+import 'cards/pulmonary_card.dart';
+
+class CategoriesScreen extends StatefulWidget {
+  final int patientId;
+
+  CategoriesScreen({@required this.patientId});
+
+  @override
+  _CategoriesScreenState createState() => _CategoriesScreenState();
+}
+
+class _CategoriesScreenState extends State<CategoriesScreen> {
+
+  int get patientId => widget.patientId;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Categorias"),
+        centerTitle: true,
+      ),
+      body: Column(
+        children: <Widget>[
+          cardioCard(context, patientId),
+          pulmonaryCard(context, patientId)
+
+        ],
+      ),
+    );
+  }
+}

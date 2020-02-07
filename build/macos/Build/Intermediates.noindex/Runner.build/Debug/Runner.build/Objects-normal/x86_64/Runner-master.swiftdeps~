@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "0650470cf8f19e18c120cec7e627022f"
+build_time: [1581080190, 139551000]
+inputs:
+  "/Users/arthurmonteiroalvesmelo/Documents/Mestrado/1p/Engenharia_Software/medical_desktop/macos/Runner/MainFlutterWindow.swift": [1576060438, 0]
+  "/Users/arthurmonteiroalvesmelo/Documents/Mestrado/1p/Engenharia_Software/medical_desktop/macos/Runner/AppDelegate.swift": [1576060438, 0]
+  "/Users/arthurmonteiroalvesmelo/Documents/Mestrado/1p/Engenharia_Software/medical_desktop/macos/Flutter/GeneratedPluginRegistrant.swift": [1581080161, 978932724]

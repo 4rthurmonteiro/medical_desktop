@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+import 'package:medical_desktop/models/patient.dart';
+import 'package:medical_desktop/screens/home/create_screen.dart';
+import 'package:medical_desktop/screens/result/result_screen.dart';
+import 'package:medical_desktop/utils/nav.dart';
+
+class PatientSheet extends StatelessWidget {
+  final Patient patient;
+
+  const PatientSheet({this.patient});
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomSheet(builder: (BuildContext context) => Column(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        FlatButton(
+          onPressed: (){
+            push(context, ResultScreen(patient: patient));
+          },
+          child: Text("Entrar"),
+        ),
+        FlatButton(
+          onPressed: (){
+            push(context, CreateScreen(patient: patient));
+          },
+          child: Text("Editar"),
+        )
+      ],
+    ), onClosing: () {},);
+  }
+}
